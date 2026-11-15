@@ -138,7 +138,6 @@ Scheduler memakai working directory yang berbeda. Pastikan service
 
 ```
 bitcoin-ai-analyst/
-├── CLAUDE.md               # Aturan & spesifikasi proyek (wajib dibaca)
 ├── docker-compose.yml      # TimescaleDB (PostgreSQL 16) lokal
 ├── requirements.txt
 ├── .env.example            # Template environment variables
