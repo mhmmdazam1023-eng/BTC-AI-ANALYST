@@ -1,5 +1,3 @@
-# Bitcoin AI Analyst
-
 Sistem Multi-Agent AI untuk analisis Bitcoin dengan output keputusan
 **Buy / Hold / Sell + Confidence Score**, berbasis data Technical, On-chain,
 Macro, Sentiment, dan Liquidity.
