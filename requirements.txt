@@ -1,0 +1,33 @@
+# ============================================================
+# Bitcoin AI Analyst - Python dependencies (Python 3.11+)
+# ============================================================
+
+# --- Core & configuration ---
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3,<3.0
+python-dotenv>=1.0
+
+# --- Database: PostgreSQL + TimescaleDB ---
+SQLAlchemy[asyncio]>=2.0.30,<2.1
+asyncpg>=0.29             # async driver (runtime)
+psycopg2-binary>=2.9      # sync driver (utility scripts / future migrations)
+greenlet>=3.0             # required by SQLAlchemy async
+
+# --- AI: Qwen via OpenAI-compatible endpoint ---
+openai>=1.35
+
+# --- Market / macro data clients (Phase 2) ---
+ccxt>=4.3                 # Binance & Indodax
+fredapi>=0.5.2            # FRED macro data
+pandas-datareader>=0.10   # Stooq stock indices
+httpx>=0.27               # Deribit, Blockchain.com, CoinGecko, Alternative.me
+pandas>=2.2
+requests>=2.31            # exception types for pandas-datareader retry logic
+
+# --- Feature engineering (Phase 3) ---
+# NOTE: pandas-ta cannot install on Python 3.14 (its numba dependency caps
+# at <3.14, verified 2026-07-08) — `ta` (pure pandas/numpy) is used instead.
+ta>=0.11
+
+# --- Resilience ---
+tenacity>=8.3

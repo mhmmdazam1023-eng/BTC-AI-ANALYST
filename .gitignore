@@ -1,0 +1,26 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs & data dumps
+logs/
+*.log
+*.csv
+*.parquet
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
